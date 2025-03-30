@@ -47,7 +47,8 @@
         - 과제이름 : 투 포인터를 활용하여 O(n)으로 해결
         - 과제이름 : DFS로 해결, 재귀를 사용하여 탐색
         ```
-
-  1주차 - 자료구조  
-  2주차 - 자료구조 2  
-  3주차  
+|주차|주제|월|수|금|
+|------|---|---|---|---|
+|1주차|자료구조|[스택](https://www.acmicpc.net/problem/10828)[스택 수열](https://www.acmicpc.net/problem/1874)|[큐2](https://www.acmicpc.net/problem/18258)[프린터 큐](https://www.acmicpc.net/problem/1966)||
+|2주차|자료구조2|테스트3|
+|3주차|테스트2|테스트3|
