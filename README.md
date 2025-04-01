@@ -49,8 +49,8 @@
         ```
 |주차|주제|월|수|금|
 |------|---|---|---|---|
-|1주차|자료구조|[스택](https://www.acmicpc.net/problem/10828) - [스택 수열](https://www.acmicpc.net/problem/1874)|[큐2](https://www.acmicpc.net/problem/18258) - [프린터 큐](https://www.acmicpc.net/problem/1966)|[덱](https://www.acmicpc.net/problem/10866) - [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)|
-|2주차|자료구조2|테스트3|테스트3|테스트3|
+|1주차|자료구조|쉬는날|[스택](https://www.acmicpc.net/problem/10828) - [스택 수열](https://www.acmicpc.net/problem/1874)|[큐2](https://www.acmicpc.net/problem/18258) - [프린터 큐](https://www.acmicpc.net/problem/1966)|
+|2주차|자료구조2|[덱](https://www.acmicpc.net/problem/10866) - [풍선 터뜨리기](https://www.acmicpc.net/problem/2346)|테스트3|테스트3|
 |3주차|테스트2|테스트3|테스트3|테스트3|
 |4주차|테스트2|테스트3|테스트3|테스트3|
 |5주차|테스트2|테스트3|테스트3|테스트3|
