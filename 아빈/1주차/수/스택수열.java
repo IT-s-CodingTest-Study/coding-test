@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main {
+public class 스택수열 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
