@@ -3,7 +3,7 @@ package 월;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class 풍선_터트리기 {
     static class Balloon {
         int index;
         int move;
