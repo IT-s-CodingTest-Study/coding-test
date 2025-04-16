@@ -4,11 +4,6 @@ import java.util.List;
 public class 기능개발 {
     public int[] solution(int[] progresses, int[] speeds) {
         int[] answer = {};
-        // [진도, 속도] 형태로 저장
-        ArrayList<int[]> temp = new ArrayList<>();
-        for (int i = 0; i < progresses.length; i++) {
-            temp.add(new int[]{progresses[i], speeds[i]});
-        }
         // 남은 작업 일 계산
         int[] day = new int[progresses.length];
         for(int i = 0; i<progresses.length; i++) {
