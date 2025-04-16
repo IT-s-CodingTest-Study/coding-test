@@ -1,5 +1,5 @@
 public class marathon {
-    public String solutino(String[] participant, String[] completion) {
+    public String solution(String[] participant, String[] completion) {
         String answer = "";
         boolean[] complete = new boolean[participant.length];
 
