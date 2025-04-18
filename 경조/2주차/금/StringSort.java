@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 class StringSort {
-    public String[] StringSort(String[] strings, int n) {
+    public String[] solution(String[] strings, int n) {
         String[] answer = strings;
 
         Arrays.sort(answer, (s1, s2) -> {
