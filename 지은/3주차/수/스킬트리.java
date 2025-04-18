@@ -12,7 +12,7 @@ class Solution {
                 int skillIndex = skill.indexOf(c);
 
                 if (skillIndex == -1) {
-                    // skill에 없는 스킬이면 무시
+                    // skill에 없는 스킬이라면 무시
                     continue;
                 }
 
