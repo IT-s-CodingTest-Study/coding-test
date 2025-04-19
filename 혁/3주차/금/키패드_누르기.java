@@ -1,5 +1,5 @@
 package 금;
-
+//키패드
 public class 키패드_누르기 {
     public String solution(int[] numbers, String hand) {
         StringBuilder answer = new StringBuilder();
