@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class 베스트앨범 {
 	public int[] solution(String[] genres, int[] plays) {
 		int[] answer = {};
 		List<Integer> result = new ArrayList<>();
