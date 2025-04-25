@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
 	public int[] solution(String[] operations) {
-		Map<Integer, Integer> tree = new TreeMap<>();
+		TreeMap<Integer, Integer> tree = new TreeMap<>();
 
 		for (String op : operations) {
 			String[] str = op.split(" ");
@@ -26,7 +26,6 @@ class Solution {
 
 		if (tree.isEmpty()) return new int[]{0, 0};
 
-		return new int[]{((TreeMap<Integer, Integer>) tree).lastKey(),
-			((TreeMap<Integer, Integer>) tree).firstKey()};
+		return new int[]{tree.lastKey(), tree.firstKey()};
 	}
 }
