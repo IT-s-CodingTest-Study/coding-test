@@ -13,9 +13,7 @@ class Solution {
 			} else {
 				if (tree.isEmpty()) continue;
 
-				int key = (num == 1) ? ((TreeMap<Integer, Integer>) tree).lastKey()
-					: ((TreeMap<Integer, Integer>) tree).firstKey();
-
+				int key = (num == 1) ? tree.lastKey() : tree.firstKey();
 				if (tree.get(key) == 1) {
 					tree.remove(key);
 				} else {
