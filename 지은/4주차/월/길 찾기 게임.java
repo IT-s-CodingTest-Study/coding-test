@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Solution {
 
     // 노드 클래스 선언: 좌표 (x, y)와 노드 인덱스, 좌우 자식 노드 연결
