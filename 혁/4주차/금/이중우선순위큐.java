@@ -5,6 +5,7 @@ public class 이중우선순위큐 {
         TreeMap<Integer, Integer> map = new TreeMap<>();
 
         for (String op : operations) {
+
             String[] parts = op.split(" ");
             String cmd = parts[0];
             int num = Integer.parseInt(parts[1]);
