@@ -1,5 +1,5 @@
 import java.util.*;
-public class 타켓넘버 {
+public class 타겟넘버 {
     int answer = 0;
     public int solution(int[] numbers, int target) {
         // index, sum은 0부터 시작
