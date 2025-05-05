@@ -1,5 +1,6 @@
 public class 모음사전 {
     public int solution(String word) {
+
         char[] chars = {'A', 'E', 'I', 'O', 'U'};
         int[] weight = {781, 156, 31, 6, 1};
         int answer = 0;
