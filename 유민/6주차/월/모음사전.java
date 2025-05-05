@@ -1,29 +1,32 @@
 import java.util.*;
 
 public class 모음사전 {
+    static String[] words = {"A", "E", "I", "O", "U"};
+    static int answer = 0;
+    static int count = 0;
+    static boolean found = false;
+
     public int solution(String word) {
-        String[] vowels = {"A", "E", "I", "O", "U"};
-        Queue<String> q = new PriorityQueue<>();
-        q.add("");
+        dfs("", word);
+        return answer;
+    }
 
-        int count = 0;
-        while (!q.isEmpty()) {
-            String current = q.poll();
+    private void dfs(String current, String target) {
+        if (found) return;
 
-            if (!current.isEmpty()) {
-                count++;
-                if (current.equals(word)) {
-                    return count;
-                }
-            }
-
-            if (current.length() < 5) {
-                for (String v : vowels) {
-                    q.add(current + v);
-                }
+        if (!current.isEmpty()) {
+            count++;
+            if (current.equals(target)) {
+                answer = count;
+                found = true;
+                return;
             }
         }
 
-        return -1;
+        if (current.length() == 5) return;
+
+        for (String w : words) {
+            dfs(current + w, target);
+        }
     }
 }
