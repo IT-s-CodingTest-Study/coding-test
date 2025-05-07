@@ -1,4 +1,3 @@
-import java.util.*;
 public class 타겟넘버 {
     int answer = 0;
     public int solution(int[] numbers, int target) {
