@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class 전력망을_둘로_나누기 {
+
     public int solution(int n, int[][] wires) {
         int min = Integer.MAX_VALUE;
 
