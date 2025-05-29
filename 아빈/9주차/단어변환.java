@@ -1,38 +1,50 @@
 import java.util.*;
-class 단어변환 {
-	public int solution(String s) {
-		int answer = 0;
-		int x = s.length();
-		Deque<Character> q = new ArrayDeque<>();
-		for(int i = 0; i < x; i ++){
-			q.addLast(s.charAt(i));
-		}
-		for(int i = 0; i < x; i++) {
-			if(correct(q, x)) {
-				answer++;
+class Solution {
+	public int solution(String begin, String target, String[] words) {
+		if(!Arrays.asList(words).contains(target)) return 0;
+
+		Queue<Word> q = new LinkedList<>();
+		boolean[] visited = new boolean[words.length];
+
+		q.offer(new Word(begin, 0));
+
+		while(!q.isEmpty()) {
+			Word curr = q.poll();
+
+			if(curr.word.equals(target)) {
+				return curr.depth;
 			}
-			char a = q.pollFirst();
-			q.addLast(a);
+
+			for(int i = 0; i < words.length; i++){
+				if(!visited[i] && canChange(curr.word, words[i])) {
+					visited[i] = true;
+					q.offer(new Word(words[i], curr.depth + 1));
+				}
+			}
 		}
-		return answer;
+		return 0;
 	}
 
-	boolean correct(Deque<Character> q, int x) {
-		Stack<Character> stack = new Stack<>();
-		Deque<Character> copy = new ArrayDeque<>(q);
-		for (int i = 0; i < x; i++) {
-			char a = copy.pollFirst();
-			if (a == '(' || a == '{' || a == '[') {
-				stack.push(a);
-			} else {
-				if (stack.isEmpty()) return false;
-				char t = stack.pop();
-				if (!isPair(t, a)) return false;
+	private boolean canChange(String word, String changeWord) {
+		int diff = 0;
+		for(int i = 0; i < word.length(); i++) {
+			if(word.charAt(i) != changeWord.charAt(i)) {
+				diff++;
+			}
+			if(diff > 1) {
+				return false;
 			}
 		}
-		return stack.isEmpty();
+		return true;
 	}
-	boolean isPair(char a, char b) {
-		return (a == '(' && b == ')') || (a == '{' && b == '}') || (a == '[' && b == ']');
+
+	class Word {
+		String word;
+		int depth;
+
+		Word(String word, int depth){
+			this.word = word;
+			this.depth = depth;
+		}
 	}
 }
