@@ -30,12 +30,10 @@ public class N으로_표현 {
                     }
                 }
             }
-
             if (dp.get(i).contains(number)) {
                 return i;
             }
         }
-
         return -1;
     }
 }
